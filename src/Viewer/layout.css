@@ -1,0 +1,21 @@
+#myCanvas {
+    background: #ffffff;
+    /* border:1px solid #000000; */
+}
+
+.navCube {
+    height: 200px;
+    width: 200px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+/* 
+.sections { 
+        width: 200px;
+        height: 200px;
+        bottom: 100px;
+        right: 0;
+        position: fixed;
+        z-index: 200000
+} */

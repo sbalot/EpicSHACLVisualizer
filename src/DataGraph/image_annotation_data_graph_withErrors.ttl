@@ -1,0 +1,42 @@
+#Contains errors
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix ns0: <http://www.kanzaki.com/ns/whois#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ns1: <http://www.w3.org/2004/02/image-regions#> .
+@prefix inst: <http://static.flickr.com/1/> .
+
+inst:36427_d97be2b5ab_jpg
+  a foaf:Image ;
+
+  dc11:description "Image taken from KROQI platform" ;
+  foaf:page <http://www.flickr.com/photos/35468151816@N01/36427/> ;
+  foaf:topic <http://www.flickr.com/photos/tags/w3c/>, <http://www.flickr.com/photos/tags/nyc/>, <http://www.flickr.com/photos/tags/isite/>, <http://www.flickr.com/photos/tags/max/>, <http://www.flickr.com/photos/tags/dajobe/>, <http://www.flickr.com/photos/tags/timbl/> ;
+  dc11:creator [
+    a foaf:Person ;
+    foaf:name "Dan Brickley" ;
+    foaf:nick "danbri" ;
+    foaf:homepage <http://www.flickr.com/people/35468151816@N01/> ;
+    ns0:stage [
+      ns0:until "now" ;
+      ns0:place "Amsterdam, The Netherlands"
+    ]
+  ] ;
+  dc11:source <http://static.flickr.com/1/36427_d97be2b5ab_o.jpg> ;
+  rdfs:seeAlso <http://www.kanzaki.com/test/exif2rdf?xsl=on&u=http://static.flickr.com/1/36427_d97be2b5ab_o.jpg> ;
+  dc11:date "2004-05-22T01:27:17" ;
+  ns1:hasRegion inst:p0,inst:p1, inst:p2 .
+
+inst:p0
+  a ns1:Rectangle ;
+  ns1:coords 19,38 ;          #Error06
+  dc11:title "Wall1" .  
+
+inst:p1
+  a ns1:Rectangle ;
+  ns1:coords "282,37 385,188" ;
+  dc11:title "Window1" .
+
+inst:p2
+  a ns1:Rectangle ;
+  ns1:coords "356,142 498,409"  .

@@ -1,0 +1,70 @@
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix inst: <http://static.flickr.com/1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix ns0: <http://www.kanzaki.com/ns/whois#> .
+@prefix ns1: <http://www.w3.org/2004/02/image-regions#> .
+
+
+inst:ImageAnnotationShape
+    a sh:NodeShape;
+    sh:targetClass foaf:Image;
+    sh:property [
+        sh:path dc11:title;
+        sh:minCount 1;
+        sh:datatype xsd:string;
+        sh:message "ERR01: Image title missing!";
+    ];
+    sh:property [
+        sh:path dc11:description;
+        sh:minCount 1;
+        sh:datatype xsd:string;
+        sh:message "ERR02: Image description field missing!";
+    ];
+    sh:property [
+        sh:path dc11:creator;
+        sh:minCount 1;
+        sh:node inst:creatorShape;
+        sh:message "ERR03: Creator details missing!";
+    ];
+    sh:property [
+        sh:path dc11:date;
+        sh:minCount 1;
+        sh:maxCount 1;
+        sh:datatype xsd:string;
+        sh:message "ERR04: Image does not have a valid time stamp!";
+    ];
+    sh:property [
+        sh:path ns1:hasRegion;
+        sh:minCount 1;
+        sh:message "ERR06: Image does not have annotations";
+        sh:node inst:coordsShape1;
+        sh:node inst:coordsShape2;
+    ].
+inst:coordsShape1
+    a sh:NodeShape;
+    sh:property [
+        sh:path ns1:coords;
+        sh:datatype xsd:string;
+        sh:message "ERR07: Coordinates not strings";
+    ].
+inst:coordsShape2
+    a sh:NodeShape;
+    sh:property [
+        sh:path dc11:title;
+        sh:datatype xsd:string;
+        sh:message "ERR08: Title for Annotation Region is missing!";
+    ].
+inst:creatorShape
+    a sh:NodeShape;
+    sh:property [
+        sh:path rdf:type;
+        sh:nodeKind sh:IRI;
+        sh:class foaf:Person;
+        sh:message "ERR05: Image creator is not well defined!";
+    ].

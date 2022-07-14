@@ -1,0 +1,67 @@
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix ns0: <http://www.kanzaki.com/ns/whois#> .
+@prefix ns1: <http://www.w3.org/2004/02/image-regions#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix bot:   <https://w3id.org/bot#> .
+@prefix beo:   <https://pi.pauwel.be/voc/buildingelement#> .
+@prefix opm:   <https://w3id.org/opm#> .
+@prefix lbd:   <https://linkebuildingdata.org/LBD#> .
+@prefix props: <http://lbd.arch.rwth-aachen.de/props#> .
+@prefix geo:   <http://www.opengis.net/ont/geosparql#> .
+@prefix seas:  <https://w3id.org/seas/> .
+@prefix unit:  <http://qudt.org/vocab/unit/> .
+@prefix IFC4-PSD: <https://www.linkedbuildingdata.net/IFC4-PSD#> .
+@prefix smls:  <https://w3id.org/def/smls-owl#> .
+@prefix inst:  <https://www.ugent.be/myAwesomeFirstBIMProject#> .
+@prefix mep:   <http://pi.pauwel.be/voc/distributionelement#> .
+@prefix furn:  <http://pi.pauwel.be/voc/furniture#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+
+inst:IFCWallShape
+    a  sh:NodeShape;
+    sh:targetClass beo:Wall;
+    sh:property [
+        sh:path props:thermalTransmittance;
+        sh:minValue 1;
+        sh:maxValue 1;
+        sh:node inst:evaluationShape1;
+        sh:message "ERR09: Thermal Property of wall missing!";
+    ].
+
+inst:evaluationShape1
+    a  sh:NodeShape;
+    sh:property [
+        sh:path seas:evaluation;
+        sh:minValue 1;
+        sh:maxValue 1;
+        sh:node inst:valueshape;
+    ].
+inst:valueshape
+    a sh:NodeShape;
+    sh:property [
+        sh:path schema:value;
+        sh:minValue 1;
+        sh:maxValue 1;
+        sh:or (
+            [sh:datatype xsd:double]
+            [sh:datatype xsd:float]
+        );
+    ].
+
+inst:IFCWindowShape
+    a  sh:NodeShape;
+    sh:targetClass beo:Window;
+    sh:property [
+        sh:path props:thermalTransmittance;
+        sh:minValue 1;
+        sh:maxValue 1;
+        sh:node inst:evaluationShapel;
+        sh:message "ERR10: Thermal Property of Window missing!";
+    ].

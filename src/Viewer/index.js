@@ -27,6 +27,7 @@ const LBDviewer = (props) => {
   const [datagraphError, setDatagraphError] = useState(false);
   const [shapegraphError, setShapegraphError] = useState(false);
   const [gltfError, setGltfError] = useState(false);
+ // const [resultgraph, setResultgraph]=useState("");
   //const [shapesgraph, setShapesgraph]=usestate('');
   //const [gltf, setGltf]=usestate('');
 
@@ -48,8 +49,12 @@ const LBDviewer = (props) => {
 
     if (datagraph && shapegraph && gltf) {
       const r = await main(datagraph, shapegraph, gltf)
+      //const ans = await main(datagraph, shapegraph, gltf)
+      //console.log(ans.second)
+      //const r=ans.first
+      //resultgraph=ans.second
       setSelection(s => r)
-      console.log(datagraph, shapegraph, gltf)
+      //console.log(datagraph, shapegraph, gltf,resultgraph)
     }
   }
 
@@ -164,7 +169,7 @@ const LBDviewer = (props) => {
           error={gltfError}
         />
         <Button
-          type="submit"
+          type="submit"a
           variant="contained"
           onClick={handleSubmit}
         >
@@ -192,3 +197,5 @@ const LBDviewer = (props) => {
 };
 
 export default LBDviewer;
+
+//The Validation results are: <output name="valresult"></output>

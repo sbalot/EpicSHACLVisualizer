@@ -1,10 +1,10 @@
 
-import fs, { readFileSync } from 'fs'
+/* import fs, { readFileSync } from 'fs' */
 import factory from 'rdf-ext'
-import toFile from 'rdf-utils-fs/toFile.js'
+/* import toFile from 'rdf-utils-fs/toFile.js'
 import fromFile from 'rdf-utils-fs/fromfile.js'
 import namespace from '@rdfjs/namespace'
-import n3 from 'n3'
+import n3 from 'n3' */
 import { QueryEngine } from '@comunica/query-sparql'
 import { Readable } from 'stream'
 import LBDviewer from "./Viewer/index.js"

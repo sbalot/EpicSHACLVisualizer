@@ -1,0 +1,1 @@
+(self.webpackChunkviewer=self.webpackChunkviewer||[]).push([[5492],{14653:function(e,n,o){const r=o(2762),t={apply:(e,n,o)=>e(o[0]),get:(e,n)=>e(n)};e.exports=function(e,{factory:n=r}={}){const o=(o="")=>n.namedNode(`${e}${o.raw||o}`);return"undefined"==typeof Proxy?o:new Proxy(o,t)}}}]);

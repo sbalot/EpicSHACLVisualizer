@@ -105,8 +105,7 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+This app runs on react and node js. Below are the instructions on getting started
 
 ### Prerequisites
 
@@ -114,8 +113,8 @@ You need the following packages, installations in your local machine to run the 
 * npm
   ```sh
   npm install npm@latest -g
-  Node.js
   ```
+* Node.js
 
 ### Installation
 
@@ -131,10 +130,12 @@ You need the following packages, installations in your local machine to run the 
    ```sh
    npm start
    ```
+   
+4. Once the website loads, enter the url for the data graph and the shape graph. For now, you can enter any text for the gltf file field. Click on the view violations button, to see the results of the data validation. 
+
+5. The violating components will be highlighted in yellow.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
 
 <!-- USAGE EXAMPLES -->
 ## Usage

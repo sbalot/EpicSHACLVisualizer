@@ -135,11 +135,7 @@ You need the following packages, installations in your local machine to run the 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-This project is used to demostrate validation using SHACL rules. 
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
+This project is used to demostrate validation using SHACL rules. Some sample rules are available at (https://github.com/sbalot/BIM4Ren_SHACLDB/tree/main/Shapes), while sample data graphs are available at (https://github.com/sbalot/BIM4Ren_SHACLDB/tree/main/Data)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -202,8 +198,6 @@ Project Link: [https://github.com/sbalot/EpicSHACLVisualizer](https://github.com
 ## Acknowledgments
 
 * [Jeroen Werbrouck](https://github.com/JWerbrouck)
-* []()
-* []()
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

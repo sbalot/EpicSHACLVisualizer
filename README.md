@@ -135,6 +135,8 @@ You need the following packages, installations in your local machine to run the 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
+This project is used to demostrate validation using SHACL rules. 
+
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
 _For more examples, please refer to the [Documentation](https://example.com)_
@@ -146,10 +148,11 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
+Below are some features which are planned, but have no definite deadlines. If you are interested in contributing, let me know :)
+
+- [ ] Allow URL inputs for gltf field
+- [ ] Downloadable validation report (in turtle format)
+- [ ] Add preloaded URL input fields as an example
 
 See the [open issues](https://github.com/sbalot/EpicSHACLVisualizer/issues) for a full list of proposed features (and known issues).
 

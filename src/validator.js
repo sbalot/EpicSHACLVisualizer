@@ -49,6 +49,8 @@ async function main(datagraph, shapegraph, gltf) {
 
     //check conformance: true or false
     console.log("Console report is ", report.conforms)
+    console.log("The data type is: ", typeof report)
+    console.log("The data type is: ", typeof report.dataset)
 
     for (const result of report.results) {
         console.log(result.message)
@@ -70,7 +72,9 @@ async function main(datagraph, shapegraph, gltf) {
             return i.get("ob3").value
         })
 
-        return final
+        console.log("data type of final is: ", typeof final)
+        //return final
+        return [final,report.dataset]
 
         /*         for (const quad1 of data.match((result.focusNode), ('http://lbd.arch.rwth-aachen.de/props#globalIdIfcRoot'), null)) {
                     for (const quad2 of data.match((quad1.object.value), ('https://w3id.org/seas/evaluation'), null)) {

@@ -28,6 +28,7 @@ const LBDviewer = (props) => {
   const [shapegraphError, setShapegraphError] = useState(false);
   const [gltfError, setGltfError] = useState(false);
  // const [resultgraph, setResultgraph]=useState("");
+  let myvalresult="";
   //const [shapesgraph, setShapesgraph]=usestate('');
   //const [gltf, setGltf]=usestate('');
 
@@ -48,14 +49,27 @@ const LBDviewer = (props) => {
     }
 
     if (datagraph && shapegraph && gltf) {
-      const r = await main(datagraph, shapegraph, gltf)
-      //const ans = await main(datagraph, shapegraph, gltf)
-      //console.log(ans.second)
-      //const r=ans.first
-      //resultgraph=ans.second
+/*       var values=await main(datagraph,shapegraph, gltf)
+      console.log('datatype of values is ', typeof values)
+      var first=values[0]
+      console.log('first value is ', values[0])
+      var second=value[1]
+      const r=values[0]
+      console.log('second value is ', values[1]) */
+
+      
+
+/*       const r = await main(datagraph, shapegraph, gltf)
+      setSelection(s => r) */
+
+      const [r, phew] = await main(datagraph, shapegraph, gltf)
       setSelection(s => r)
-      //console.log(datagraph, shapegraph, gltf,resultgraph)
+      myvalresult=phew
+      
     }
+
+    console.log("my validation results: ", myvalresult)
+    alert( myvalresult)
   }
 
   /*   const [value, setValue]=useState("");
@@ -176,6 +190,14 @@ const LBDviewer = (props) => {
           View Violations
         </Button>
       </Box>
+      <Box component="form"
+        sx={{
+          '& > :not(style)': { m: 1, width: '25ch' },
+        }}
+        noValidate
+        autoComplete="off">
+      </Box>
+
 
       {props.models.length > 0 ? (
         <div>

@@ -186,7 +186,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Madhumitha Senthilvel - [@twitter_handle](https://twitter.com/twitter_handle) - sbalot.ed@gmail.com
+Madhumitha Senthilvel - sbalot.ed@gmail.com
 
 Project Link: [https://github.com/sbalot/EpicSHACLVisualizer](https://github.com/sbalot/EpicSHACLVisualizer)
 

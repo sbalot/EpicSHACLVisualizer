@@ -190,7 +190,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+Madhumitha Senthilvel - [@twitter_handle](https://twitter.com/twitter_handle) - sbalot.ed@gmail.com
 
 Project Link: [https://github.com/sbalot/EpicSHACLVisualizer](https://github.com/sbalot/EpicSHACLVisualizer)
 
@@ -201,7 +201,7 @@ Project Link: [https://github.com/sbalot/EpicSHACLVisualizer](https://github.com
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* []()
+* [Jeroen Werbrouck](https://github.com/JWerbrouck)
 * []()
 * []()
 

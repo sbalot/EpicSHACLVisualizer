@@ -135,7 +135,7 @@ You need the following packages, installations in your local machine to run the 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-This project is used to demostrate validation using SHACL rules. Some sample rules are available at (https://github.com/sbalot/BIM4Ren_SHACLDB/tree/main/Shapes), while sample data graphs are available at (https://github.com/sbalot/BIM4Ren_SHACLDB/tree/main/Data)
+This project is used to demostrate validation using SHACL rules. Some sample rules are available at https://github.com/sbalot/BIM4Ren_SHACLDB/tree/main/Shapes, while sample data graphs are available at https://github.com/sbalot/BIM4Ren_SHACLDB/tree/main/Data
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -198,6 +198,8 @@ Project Link: [https://github.com/sbalot/EpicSHACLVisualizer](https://github.com
 ## Acknowledgments
 
 * [Jeroen Werbrouck](https://github.com/JWerbrouck)
+
+This project received funding from the BIM4Ren H2020 EU-funded project under the grant agreement 820773.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

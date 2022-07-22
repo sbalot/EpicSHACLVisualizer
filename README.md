@@ -29,8 +29,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/sbalot/repo_name">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/sbalot/EpicSHACLVisualizer">
+    <img src="logo.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">EpicSHACLVisualizer</h3>
@@ -38,14 +38,14 @@
   <p align="center">
     project_description
     <br />
-    <a href="https://github.com/sbalot/repo_name"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/sbalot/EpicSHACLVisualizer"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/sbalot/repo_name">View Demo</a>
+    <a href="https://github.com/sbalot/EpicSHACLVisualizer">View Demo</a>
     ·
-    <a href="https://github.com/sbalot/repo_name/issues">Report Bug</a>
+    <a href="https://github.com/sbalot/EpicSHACLVisualizer/issues">Report Bug</a>
     ·
-    <a href="https://github.com/sbalot/repo_name/issues">Request Feature</a>
+    <a href="https://github.com/sbalot/EpicSHACLVisualizer/issues">Request Feature</a>
   </p>
 </div>
 
@@ -86,14 +86,9 @@
 
 This project was developed as a part of ongoing research in SHACL rules for validating building models in the AEC domain. 
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
-
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
-
 ### Built With
-
 
 * [![React][React.js]][React-url]
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
@@ -140,9 +135,7 @@ You need the following packages, installations in your local machine to run the 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
+This project is used to demostrate validation using SHACL rules. Some sample rules are available at https://github.com/sbalot/BIM4Ren_SHACLDB/tree/main/Shapes, while sample data graphs are available at https://github.com/sbalot/BIM4Ren_SHACLDB/tree/main/Data
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -151,10 +144,11 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
+Below are some features which are planned, but have no definite deadlines. If you are interested in contributing, let me know :)
+
+- [ ] Allow URL inputs for gltf field
+- [ ] Downloadable validation report (in turtle format)
+- [ ] Add preloaded URL input fields as an example
 
 See the [open issues](https://github.com/sbalot/EpicSHACLVisualizer/issues) for a full list of proposed features (and known issues).
 
@@ -192,7 +186,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+Madhumitha Senthilvel - sbalot.ed@gmail.com
 
 Project Link: [https://github.com/sbalot/EpicSHACLVisualizer](https://github.com/sbalot/EpicSHACLVisualizer)
 
@@ -203,9 +197,9 @@ Project Link: [https://github.com/sbalot/EpicSHACLVisualizer](https://github.com
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* []()
-* []()
-* []()
+* [Jeroen Werbrouck](https://github.com/JWerbrouck)
+
+This project received funding from the BIM4Ren H2020 EU-funded project under the grant agreement 820773.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -213,19 +207,19 @@ Project Link: [https://github.com/sbalot/EpicSHACLVisualizer](https://github.com
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo_name/network/members
+[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
+[contributors-url]: https://github.com/sbalot/EpicSHACLVisualizer/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
+[forks-url]: https://github.com/sbalot/EpicSHACLVisualizer/network/members
 [stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
 [stars-url]: https://github.com/github_username/repo_name/stargazers
 [issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
 [issues-url]: https://github.com/github_username/repo_name/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
+[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
+[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/linkedin_username
-[product-screenshot]: images/screenshot.png
+[linkedin-url]: https://www.linkedin.com/in/madhumithasenthilvel/
+[product-screenshot]: screenshot.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
@@ -233,7 +227,6 @@ Project Link: [https://github.com/sbalot/EpicSHACLVisualizer](https://github.com
 [Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
 [Vue-url]: https://vuejs.org/
 [Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
-[Angular-url]: https://angular.io/
 [Svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
 [Svelte-url]: https://svelte.dev/
 [Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white

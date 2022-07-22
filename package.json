@@ -30,7 +30,6 @@
     "events": "^3.3.0",
     "express": "^4.18.1",
     "https-browserify": "^1.0.0",
-    "lbdserver-client-api": "file:../../lbdserver-client-api",
     "mem": "^9.0.2",
     "n3": "^1.16.2",
     "os-browserify": "^0.3.0",
